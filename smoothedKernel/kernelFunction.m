@@ -1,4 +1,4 @@
-function ou = kernelFunction(data, len, h, x)
+function [ou, sum] = kernelFunction(data, len, h, x)
     sum = 0;
     for i=1:len
         sum = sum + normpdf((x - data(i, 1)) / h, 0, 1);
