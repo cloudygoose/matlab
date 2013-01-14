@@ -5,7 +5,7 @@ function [seq, len] = fyc()
 Z = exp(X+3.*Y-0.1)+exp(X-3.*Y-0.1)+exp(-X-0.1);
 figure
 contour(X, Y, Z, 10)
-figure
+hold on;
 plot(0, 0, 'o')
 end
 
